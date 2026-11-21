@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-21",
+  "sources": [
+    {
+      "title": "MCP specification",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "type": "upstream_repository",
+      "supports": "Core protocol architecture and requirements.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Core protocol architecture and requirements.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "MCP security best practices",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/docs/2025-06-18/tutorials/security/security_best_practices.mdx",
+      "type": "versioned_official_guidance",
+      "supports": "OAuth-related attacks, token handling, sessions, and access-control considerations.",
+      "authority": "Model Context Protocol upstream",
+      "version_or_date": "2025-06-18",
+      "claim_scope": "OAuth-related attacks, token handling, sessions, and access-control considerations.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "MCP Inspector",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "type": "upstream_repository",
+      "supports": "Connects to MCP servers and exposes tools, resources, and prompts for inspection.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Connects to MCP servers and exposes tools, resources, and prompts for inspection.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "MCPJam Inspector",
+      "url": "https://github.com/MCPJam/inspector",
+      "type": "upstream_repository",
+      "supports": "Provides a UI for connecting to and testing MCP servers.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Provides a UI for connecting to and testing MCP servers.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "mcp-scan",
+      "url": "https://github.com/invariantlabs-ai/mcp-scan",
+      "type": "upstream_repository",
+      "supports": "Scans MCP configurations and server descriptions for risky patterns.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Scans MCP configurations and server descriptions for risky patterns.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OWASP Top 10 for LLM Applications",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "type": "industry_security_guidance",
+      "supports": "Names prompt injection, excessive agency, sensitive disclosure, and related risks.",
+      "authority": "OWASP GenAI Security Project",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Names prompt injection, excessive agency, sensitive disclosure, and related risks.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OAuth 2.1 draft",
+      "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/",
+      "type": "standards_draft",
+      "supports": "Consolidates current OAuth 2.0 deployment practices.",
+      "authority": "IETF datatracker",
+      "version_or_date": "moving Internet-Draft; freeze retrieved revision before implementation",
+      "claim_scope": "Consolidates current OAuth 2.0 deployment practices.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "NIST AI RMF Generative AI Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "type": "government_guidance",
+      "supports": "Maps generative-AI risks to governance and measurement activities.",
+      "authority": "NIST",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Maps generative-AI risks to governance and measurement activities.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    }
+  ]
+}

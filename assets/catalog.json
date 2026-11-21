@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "profile": 4,
+  "repository": "mcp-server-security-checklist",
+  "reviewed_on": "2026-11-21",
+  "comparison_axes": [
+    "Resource role",
+    "Covers",
+    "Best use",
+    "Does not prove",
+    "Authority"
+  ],
+  "entries": [
+    {
+      "name": "MCP specification",
+      "role_or_focus": "normative protocol",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "supported_claim": "Core protocol architecture and requirements.",
+      "best_use": "Resolve normative behavior before adding implementation controls.",
+      "important_boundary": "That a particular server enforces the specification safely.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "MCP security best practices",
+      "role_or_focus": "official security guidance",
+      "url": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/docs/2025-06-18/tutorials/security/security_best_practices.mdx",
+      "supported_claim": "OAuth-related attacks, token handling, sessions, and access-control considerations.",
+      "best_use": "Create server and client security requirements.",
+      "important_boundary": "That non-auth prompt-injection paths are contained.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "MCP Inspector",
+      "role_or_focus": "official interactive testing tool",
+      "url": "https://github.com/modelcontextprotocol/inspector",
+      "supported_claim": "Connects to MCP servers and exposes tools, resources, and prompts for inspection.",
+      "best_use": "Manually inspect a development server’s exposed surface.",
+      "important_boundary": "Authorization correctness or resistance to malicious content.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "MCPJam Inspector",
+      "role_or_focus": "community MCP development inspector",
+      "url": "https://github.com/MCPJam/inspector",
+      "supported_claim": "Provides a UI for connecting to and testing MCP servers.",
+      "best_use": "Cross-check tool schemas and server behavior during development.",
+      "important_boundary": "A formal security audit.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "mcp-scan",
+      "role_or_focus": "community MCP security scanner",
+      "url": "https://github.com/invariantlabs-ai/mcp-scan",
+      "supported_claim": "Scans MCP configurations and server descriptions for risky patterns.",
+      "best_use": "Add a preflight inspection layer to a development workflow.",
+      "important_boundary": "Absence of runtime abuse or logic flaws.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "OWASP Top 10 for LLM Applications",
+      "role_or_focus": "threat catalog",
+      "url": "https://genai.owasp.org/llm-top-10/",
+      "supported_claim": "Names prompt injection, excessive agency, sensitive disclosure, and related risks.",
+      "best_use": "Ensure the review includes threats beyond transport security.",
+      "important_boundary": "MCP-specific protocol conformance.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "OAuth 2.1 draft",
+      "role_or_focus": "authorization baseline",
+      "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/",
+      "supported_claim": "Consolidates current OAuth 2.0 deployment practices.",
+      "best_use": "Review authorization flows referenced by modern protocols.",
+      "important_boundary": "Application-level authorization to each MCP resource.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "NIST AI RMF Generative AI Profile",
+      "role_or_focus": "risk-management framework",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "supported_claim": "Maps generative-AI risks to governance and measurement activities.",
+      "best_use": "Assign owners, evidence, and residual-risk decisions.",
+      "important_boundary": "A server-level penetration test.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    }
+  ],
+  "field_provenance": {
+    "supported_claim": "source-backed at the cited URL, subject to the recorded review date/version",
+    "best_use": "author recommendation; requires local validation",
+    "important_boundary": "author analysis unless the linked source explicitly states it"
+  }
+}
