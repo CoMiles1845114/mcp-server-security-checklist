@@ -1,5 +1,10 @@
 # MCP Server Pre-Release Security Checklist
 
+
+> **Decision:** Use this checklist before releasing or connecting an MCP server with access to files, credentials, networks, or destructive tools; do not treat it as a security certification or a substitute for implementation-specific testing.
+>
+> **For:** MCP server maintainers, client integrators, and security reviewers  ·  **Not for:** teams seeking a compliance badge or live-target attack playbook
+
 Use this gate before exposing an MCP server to users or connecting a client that can reach files, credentials, network services, or destructive tools. It is a **release checklist**, not a security certification.
 
 **Frozen baseline:** MCP specification and security guidance dated **2025-06-18**; OAuth reference is the Internet-Draft at the URL reviewed on **2026-11-21**. Re-run this review whenever the implementation targets a newer protocol/auth draft.
@@ -72,6 +77,14 @@ Re-review when the targeted MCP spec/auth draft changes, a transport is added, a
 
 Source ledger: [`sources/sources.json`](sources/sources.json). Release artifact: [`assets/release-gate.md`](assets/release-gate.md).
 
+## Adjacent guides
+
+- [repo-agent-prompt-injection-tests](https://github.com/Ozekmiami/repo-agent-prompt-injection-tests) — Use it when repository content can steer a coding agent and you need inert prompt-injection fixtures.
+- [agent-execution-control-sandbox](https://github.com/MargaritaOfficial/agent-execution-control-sandbox) — Use it when tool approval is not enough and the agent also needs an enforced execution boundary.
+- [dependency-agent-safety-gates](https://github.com/WILLIAMSTONSA/dependency-agent-safety-gates) — Use it when an agent proposes dependency changes that need independent evidence and rollback.
+
 ## License
 
 Original checklist and release-gate template are available under CC BY 4.0. Linked standards and projects retain their own terms.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
